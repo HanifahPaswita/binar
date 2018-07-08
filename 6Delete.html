@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+    </head>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        body{background-image:url(gambar/coba.jpg); background-size:cover}
+        .btn:hover {
+            opacity: 1;
+        }
+        </style>
+	
+    <body>
+		<div>
+                <button onclick="konfirmasiDulu()">Delete</button>
+                <p id="hasil"></p>
+                
+                <script>
+                    function konfirmasiDulu(){
+                        var konfirmasi = confirm("Are you sure want to delete MELATI?");
+                        var text = "";
+                        
+                        if(konfirmasi === true) {
+                            text = "Yes , delete it";
+                        }else{
+                            text = "No";
+                        }
+                        
+                        document.getElementById("hasil").innerHTML = text;
+                    }
+                </script>
+        </div>
+
+
+        
+	</body>
+ 
+</html>

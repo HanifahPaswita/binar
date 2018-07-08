@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+body{background-image:url(gambar/coba.jpg); background-size:cover}
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <fieldset>
+    <h2> Edit Product</h2>
+  
+  <div class="input-container">
+    
+    <input class="input-field" type="text" placeholder="MELATI" name="name">
+  </div>
+
+  <div class="input-container">
+    
+    <input class="input-field" type="text" placeholder="32.500" name="price">
+  </div>
+  
+  <div class="input-container">
+   
+    <input class="input-field" type="text" placeholder="https://sourceimage.com" name="name">
+  </div>
+
+  <div>
+      <center>
+            <input type="reset" name="back" value="Back">
+            <input type="submit" name="update" value="Update">
+      </center>
+      
+  </div>
+
+
+</body>
+</html>
